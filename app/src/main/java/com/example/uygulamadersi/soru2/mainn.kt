@@ -5,4 +5,7 @@ fun main(){
     gitar.sesCikar()
     val piyano = Piyano()
     piyano.sesCikar()
+    val muzikDersi = MüzikDersi()
+
+    muzikDersi.cal(gitar)
 }
