@@ -1,4 +1,4 @@
-package com.example.uygulamadersi
+package com.example.uygulamadersi.soru1
 
 class Elma(ad: String, tatlilik: Int, val vitaminDegeri: String) : Meyve(ad, tatlilik) {
 

@@ -1,4 +1,4 @@
-package com.example.uygulamadersi
+package com.example.uygulamadersi.soru2
 
 open class MuzikAleti {
     open fun sesCikar(){
