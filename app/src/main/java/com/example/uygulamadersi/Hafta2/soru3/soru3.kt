@@ -4,7 +4,7 @@ fun birlestirilmisListe(liste1: Array<Int>, liste2: Array<Int>): List<Int> {
     val sonucListe = ArrayList<Int>(liste1.size + liste2.size)
     sonucListe.addAll(liste1)
     sonucListe.addAll(liste2)
-    return sonucListe
+    return sonucListe.sorted()
 }
 
 fun main() {
