@@ -5,7 +5,7 @@ fun TekSayilar(liste: Array<Int>): List<Int> {
 }
 
 fun main() {
-    val myArray = arrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9)
-    val sonuc = TekSayilar(myArray)
+    val Array = arrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9)
+    val sonuc = TekSayilar(Array)
     println("Tek sayılar: $sonuc")
 }
