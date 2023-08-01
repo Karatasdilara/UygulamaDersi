@@ -10,5 +10,5 @@ fun main() {
 
     elemanlariKopyala(alinanKume, hedefKume)
 
-    println("Hedef Küme (Sonra): $hedefKume")
+    println("oluşan küme : $hedefKume")
 }
