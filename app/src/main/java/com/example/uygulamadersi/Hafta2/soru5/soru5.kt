@@ -9,7 +9,6 @@ fun tekrarEdenleriBulma(liste: Array<Int>): HashSet<Int> {
             tekrarEdenler.add(eleman)
         }
     }
-
     return tekrarEdenler
 }
 
