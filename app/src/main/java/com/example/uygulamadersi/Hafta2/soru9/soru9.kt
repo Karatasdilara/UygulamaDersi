@@ -1,13 +1,10 @@
 package com.example.uygulamadersi.Hafta2.soru9
 
-fun cıkartma(set1: Set<Int>, set2: Set<Int>): Set<Int> {
-    return set1.subtract(set2)
-}
-
 fun main() {
-    val set1 = setOf(1, 2, 3, 4, 5)
-    val set2 = setOf(3, 4, 5, 6, 7)
+    val liste1 = listOf(1, 2, 3, 4, 5)
+    val liste2 = listOf(3, 4, 5, 6, 7)
 
-    val sonuc = cıkartma(set1, set2)
-    println("Sonuç: $sonuc")
+    val liste2deOlmayanlar = liste1.filterNot { it in liste2 }
+
+    println("Liste 2'de olmayanlar: $liste2deOlmayanlar")
 }
