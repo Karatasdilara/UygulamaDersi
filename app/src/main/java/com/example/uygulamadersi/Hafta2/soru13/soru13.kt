@@ -1,28 +1,21 @@
 package com.example.uygulamadersi.Hafta2.soru13
 
-fun <K, V : Comparable<V>> enBuyukKeyValueBul(harita: HashMap<K, V>): Pair<K, V>? {
-    var enBuyukDeger: V? = null
-    var anahtarAit: K? = null
 
-    for ((anahtar, deger) in harita) {
-        if (enBuyukDeger == null || deger > enBuyukDeger) {
-            enBuyukDeger = deger
-            anahtarAit = anahtar
+fun main() {
+    val hashmap2 = hashMapOf("a" to 1, "b" to 5, "c" to 2, "d" to 3)
+    maxKeyValue(hashmap2)
+}
+
+
+fun maxKeyValue (hashmap:HashMap<String,Int>){
+    val maxValue = hashMapOf<String,Int>()
+    val max = hashmap.values.max()
+
+    for (i in hashmap){
+        if (i.value== max){
+            maxValue.put(i.key,i.value)
         }
     }
 
-    return anahtarAit?.let { anahtar -> Pair(anahtar, enBuyukDeger!!) }
-}
-
-fun main() {
-    val harita = hashMapOf("a" to 1, "b" to 5, "c" to 2, "d" to 3)
-
-    val enBuyukKeyValue = enBuyukKeyValueBul(harita)
-
-    if (enBuyukKeyValue != null) {
-        val (anahtar, deger) = enBuyukKeyValue
-        println("En büyük anahtar ve değer: $anahtar -> $deger")
-    } else {
-        println("Harita boş.")
-    }
+    println(maxValue)
 }
