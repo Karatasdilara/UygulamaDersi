@@ -1,18 +1,15 @@
 package com.example.uygulamadersi.Hafta2.soru11
 
-fun <T> elemanSayisi(arrayList: ArrayList<T>): HashMap<T, Int> {
-    val sayac = HashMap<T, Int>()
-
-    for (eleman in arrayList) {
-        sayac[eleman] = sayac.getOrDefault(eleman, 0) + 1
-    }
-
-    return sayac
-}
 
 fun main() {
-    val arrayList = arrayListOf("a", "a", "b", "b", "b", "c", "d")
+    val liste = listOf(1,2,2,3,3,3,4,5,5)
+    val has = HashMap<Int,Int>()
+    for (i in liste){
+        if (!has.keys.contains(i)){
+            has.put(i,liste.filter {it == i}.count())
+        }
+    }
+    println(has)
 
-    val sayac = elemanSayisi(arrayList)
-    println("Eleman Sayısı: $sayac")
+
 }
