@@ -18,4 +18,5 @@ fun main() {
 
     val kesisim = kesisimBul(map1, map2)
     println("Kesişim: $kesisim")
+
 }
