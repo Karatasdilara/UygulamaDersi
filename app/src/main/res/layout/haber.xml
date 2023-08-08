@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/haberFoto"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/aaaaa" />
+
+    <TextView
+        android:id="@+id/başlık"
+        android:layout_width="369dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:baselineAlignBottom="@id/haberFoto"
+        android:text="Başlık"
+        android:textColor="#F1ECEC"
+        android:textSize="48sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tarih"
+        android:layout_width="51dp"
+        android:layout_height="29dp"
+        android:layout_below="@id/haberFoto"
+        android:layout_marginTop="8dp"
+        android:text="Tarih"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/haberiçerik"
+        android:layout_width="382dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/tarih"
+        android:layout_marginTop="16dp"
+        android:text="Haber İçeriği" />
+
+    <Button
+        android:id="@+id/Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/haberiçerik"
+        android:layout_marginTop="29dp"
+        android:text="Devamını Oku" />
+</RelativeLayout>

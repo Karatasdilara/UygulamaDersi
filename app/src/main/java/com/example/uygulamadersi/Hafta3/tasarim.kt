@@ -8,6 +8,6 @@ import com.example.uygulamadersi.R
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.tasarim)
+        setContentView(R.layout.haber)
     }
 }
